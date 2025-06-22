@@ -27,28 +27,28 @@ export default function FinancialAdvisorLanding() {
       icon: <BookOpen className="h-8 w-8" />,
       title: "Investavimo gidas pradedantiesiems",
       description:
-        "Žingsnis po žingsnio vedimas pirmą kartą investuojantiems, apimantis pagrindus ir pasitikėjimo kūrimą investavimo kelyje.",
+        "Žingsnis po žingsnio - kaip pasiruošti ir pradėti įdarbinti pinigus.",
       slug: "investment-guidance",
     },
     {
       icon: <PiggyBank className="h-8 w-8" />,
       title: "Pinigų valdymas ir biudžeto planavimas",
       description:
-        "Išsamūs biudžeto strategijos ir finansinio planavimo sprendimai, kad maksimaliai padidintumėte savo santaupas ir pasiektumėte finansinį stabilumą.",
+        "Išsamios pinigų valdymo sistemos, padėsiančios taupyti ir užtikrinti finansinį stabilumą.",
       slug: "money-management",
     },
     {
       icon: <Home className="h-8 w-8" />,
       title: "Būsto kredito konsultacijos",
       description:
-        "Ekspertų patarimai dėl būsto kredito galimybių, refinansavimo strategijų ir nekilnojamojo turto investicijų.",
+        "Patarimai dėl būsto kredito galimybių, refinansavimas, išansktinės būsto kredito grąžinimo strategijos, derybos su bankais.",
       slug: "mortgage-consultation",
     },
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Draudimo konsultacijos",
       description:
-        "Išsamus draudimo planavimas, kad apsaugotumėte savo turtą, šeimą ir finansinę ateitį nuo nenumatytų aplinkybių.",
+        "Turimų draudiminių apsaugų peržiūrą, gyvybės, traumų, neįgalumo, kritinių ligų draudimas.",
       slug: "insurance-consultation",
     },
   ];
@@ -308,9 +308,9 @@ export default function FinancialAdvisorLanding() {
                 su pasitikėjimu
               </h1>
               <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto lg:mx-0">
-                Paversk savo finansinius tikslus realybe su individualizuotomis
-                investavimo strategijomis, ekspertų patarimus ir įrodytais turto
-                kūrimo metodais, pritaikytais būtent tau.
+                Paversk savo finansines svajones realybe – gauk asmeninę finansų
+                valdymo, investavimo konsultaciją, pritaikytą pagal Tavo
+                asmeninius poreikius.
               </p>
             </div>
 
@@ -386,9 +386,8 @@ export default function FinancialAdvisorLanding() {
                 Išsamios finansų paslaugos
               </h2>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Nuo investavimo planavimo iki būsto kredito konsultacijų -
-                teikiu visapusiškus finansinius sprendimus, kad padėčiau jums
-                pasiekti finansinius tikslus ir užtikrinti ateitį.
+                Nuo biudžetavimo iki investavimo konsultacijų - priimk
+                informuotus finansinius sprendimus.
               </p>
             </div>
           </div>
