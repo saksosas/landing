@@ -34,6 +34,7 @@ import {
 import Link from "next/link";
 import { Footer } from "@/components/footer";
 import { InternalHeader } from "@/components/internal-header";
+import Image from "next/image";
 
 export default function InvestmentGuidance() {
   const benefits = [
@@ -111,15 +112,18 @@ export default function InvestmentGuidance() {
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Nesvarbu, ar turite 100 ar 10,000 eurų - kiekvienas gali pradėti
-                investuoti protingai. Svarbiausia yra turėti teisingą strategiją
-                ir patikimą vadovą.
+                investuoti protingai. Svarbiausia yra turėti tinkamą strategiją,
+                atitinkančią finansinius tikslus.
               </p>
             </div>
             <div className="relative">
-              <img
-                src="/placeholder.svg?height=400&width=500"
+              <Image
+                src="https://peu6gs1psdk3eh7n.public.blob.vercel-storage.com/pexels-weekendplayer-187041-oLfUKwV7cAohwZY2L4aUz5Z7owPfsY.jpg"
                 alt="Investment Planning"
                 className="rounded-2xl shadow-xl w-full"
+                width={500}
+                height={400}
+                priority
               />
             </div>
           </div>

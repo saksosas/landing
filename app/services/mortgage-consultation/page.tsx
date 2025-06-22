@@ -30,6 +30,7 @@ import {
 } from "lucide-react";
 import { Footer } from "@/components/footer";
 import { InternalHeader } from "@/components/internal-header";
+import Image from "next/image";
 
 export default function MortgageConsultation() {
   const benefits = [
@@ -106,10 +107,13 @@ export default function MortgageConsultation() {
               </p>
             </div>
             <div className="relative">
-              <img
-                src="/placeholder.svg?height=400&width=500"
+              <Image
+                src="https://peu6gs1psdk3eh7n.public.blob.vercel-storage.com/pexels-rdne-8293700-HY3hwcHJRfkQbXcngiyG4nDVhg4bQW.jpg"
                 alt="Mortgage Consultation"
                 className="rounded-2xl shadow-xl w-full"
+                width={500}
+                height={400}
+                priority
               />
             </div>
           </div>
