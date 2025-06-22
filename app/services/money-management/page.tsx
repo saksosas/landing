@@ -1,11 +1,38 @@
-"use client"
+import type { Metadata } from "next";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { PiggyBank, Calendar, CheckCircle, Calculator, Target, TrendingUp, Shield } from "lucide-react"
-import Link from "next/link"
-import { Footer } from "@/components/footer"
-import { InternalHeader } from "@/components/internal-header"
+export const metadata: Metadata = {
+  title: "Pinigų valdymas ir biudžeto planavimas",
+  description:
+    "Pinigų valdymas ir biudžeto planavimas - išsamūs biudžeto strategijos ir finansinio planavimo sprendimai. Padidinkite santaupas ir pasiekite finansinį stabilumą su Mantu Molotkovu.",
+  keywords: [
+    "pinigų valdymas",
+    "biudžeto planavimas",
+    "finansinis planavimas",
+    "taupymas",
+    "santaupos",
+    "finansų konsultantas",
+  ],
+  openGraph: {
+    title: "Pinigų valdymas ir biudžeto planavimas | Mantas Molotkovas",
+    description:
+      "Sukurkite efektyvų biudžetą ir pasiekite finansinį stabilumą. Individualizuoti pinigų valdymo sprendimai.",
+  },
+};
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  PiggyBank,
+  Calendar,
+  CheckCircle,
+  Calculator,
+  Target,
+  TrendingUp,
+  Shield,
+} from "lucide-react";
+import Link from "next/link";
+import { Footer } from "@/components/footer";
+import { InternalHeader } from "@/components/internal-header";
 
 export default function MoneyManagement() {
   const benefits = [
@@ -15,30 +42,34 @@ export default function MoneyManagement() {
     "Skubių situacijų fondo kūrimas",
     "Skolų valdymo strategijos",
     "Reguliarūs biudžeto peržiūros ir koregavimai",
-  ]
+  ];
 
   const areas = [
     {
       icon: <Calculator className="h-8 w-8" />,
       title: "Biudžeto planavimas",
-      description: "Sukuriame detalų mėnesio biudžetą, kuris padės kontroliuoti išlaidas ir didinti santaupas",
+      description:
+        "Sukuriame detalų mėnesio biudžetą, kuris padės kontroliuoti išlaidas ir didinti santaupas",
     },
     {
       icon: <Target className="h-8 w-8" />,
       title: "Tikslų nustatymas",
-      description: "Apibrėžiame trumpalaikius ir ilgalaikius finansinius tikslus su konkrečiais terminais",
+      description:
+        "Apibrėžiame trumpalaikius ir ilgalaikius finansinius tikslus su konkrečiais terminais",
     },
     {
       icon: <TrendingUp className="h-8 w-8" />,
       title: "Santaupų augimas",
-      description: "Strategijos, kaip efektyviai taupyti ir didinti savo finansinius rezervus",
+      description:
+        "Strategijos, kaip efektyviai taupyti ir didinti savo finansinius rezervus",
     },
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Finansinis saugumas",
-      description: "Apsaugos nuo nenumatytų išlaidų ir finansinių sunkumų kūrimas",
+      description:
+        "Apsaugos nuo nenumatytų išlaidų ir finansinių sunkumų kūrimas",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-blue-50 to-purple-50">
@@ -55,8 +86,9 @@ export default function MoneyManagement() {
               Pinigų valdymas ir biudžeto planavimas
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Išsamūs biudžeto strategijos ir finansinio planavimo sprendimai, kad maksimaliai padidintumėte savo
-              santaupas ir pasiektumėte finansinį stabilumą.
+              Išsamūs biudžeto strategijos ir finansinio planavimo sprendimai,
+              kad maksimaliai padidintumėte savo santaupas ir pasiektumėte
+              finansinį stabilumą.
             </p>
           </div>
         </div>
@@ -68,14 +100,18 @@ export default function MoneyManagement() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Kodėl pinigų valdymas yra svarbus?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Kodėl pinigų valdymas yra svarbus?
+              </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Geras pinigų valdymas yra finansinio sėkmės pagrindas. Nesvarbu, kiek uždirbate - svarbiausia yra mokėti
-                protingai valdyti savo finansus, planuoti ateičiai ir kurti stabilų finansinį pagrindą.
+                Geras pinigų valdymas yra finansinio sėkmės pagrindas. Nesvarbu,
+                kiek uždirbate - svarbiausia yra mokėti protingai valdyti savo
+                finansus, planuoti ateičiai ir kurti stabilų finansinį pagrindą.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Kartu sukursime jums tinkamą biudžeto sistemą, kuri padės pasiekti jūsų finansinius tikslus ir užtikrins
-                ramybę finansų klausimais.
+                Kartu sukursime jums tinkamą biudžeto sistemą, kuri padės
+                pasiekti jūsų finansinius tikslus ir užtikrins ramybę finansų
+                klausimais.
               </p>
             </div>
             <div className="relative">
@@ -89,7 +125,9 @@ export default function MoneyManagement() {
 
           {/* Service Areas */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Pagrindinės paslaugų sritys</h2>
+            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+              Pagrindinės paslaugų sritys
+            </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {areas.map((area, index) => (
                 <Card
@@ -98,8 +136,12 @@ export default function MoneyManagement() {
                 >
                   <CardContent className="p-8">
                     <div className="text-emerald-600 mb-4">{area.icon}</div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">{area.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{area.description}</p>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      {area.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {area.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -115,7 +157,9 @@ export default function MoneyManagement() {
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-700 leading-relaxed">{benefit}</span>
+                  <span className="text-gray-700 leading-relaxed">
+                    {benefit}
+                  </span>
                 </div>
               ))}
             </div>
@@ -132,9 +176,12 @@ export default function MoneyManagement() {
                   1
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Dabartinės situacijos analizė</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Dabartinės situacijos analizė
+                  </h3>
                   <p className="text-gray-600">
-                    Išanalizuojame jūsų dabartinius pajamas, išlaidas ir finansinius įpročius
+                    Išanalizuojame jūsų dabartinius pajamas, išlaidas ir
+                    finansinius įpročius
                   </p>
                 </div>
               </div>
@@ -143,8 +190,12 @@ export default function MoneyManagement() {
                   2
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Tikslų nustatymas</h3>
-                  <p className="text-gray-600">Kartu apibrėžiame jūsų finansinius tikslus ir prioritetus</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Tikslų nustatymas
+                  </h3>
+                  <p className="text-gray-600">
+                    Kartu apibrėžiame jūsų finansinius tikslus ir prioritetus
+                  </p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -152,8 +203,12 @@ export default function MoneyManagement() {
                   3
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Biudžeto kūrimas</h3>
-                  <p className="text-gray-600">Sukuriame detalų ir realistišką biudžeto planą</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Biudžeto kūrimas
+                  </h3>
+                  <p className="text-gray-600">
+                    Sukuriame detalų ir realistišką biudžeto planą
+                  </p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -161,8 +216,13 @@ export default function MoneyManagement() {
                   4
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Stebėjimas ir koregavimas</h3>
-                  <p className="text-gray-600">Reguliariai peržiūrime ir koreguojame biudžetą pagal poreikius</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Stebėjimas ir koregavimas
+                  </h3>
+                  <p className="text-gray-600">
+                    Reguliariai peržiūrime ir koreguojame biudžetą pagal
+                    poreikius
+                  </p>
                 </div>
               </div>
             </div>
@@ -180,11 +240,15 @@ export default function MoneyManagement() {
               Pradėkite valdyti savo finansus protingai
             </h2>
             <p className="text-xl text-emerald-100 mb-8 leading-relaxed">
-              Užsisakykite nemokamą konsultaciją ir sužinokite, kaip sukurti efektyvų biudžetą ir pasiekti finansinį
-              stabilumą. Kartu sukursime jums tinkamą pinigų valdymo sistemą.
+              Užsisakykite nemokamą konsultaciją ir sužinokite, kaip sukurti
+              efektyvų biudžetą ir pasiekti finansinį stabilumą. Kartu sukursime
+              jums tinkamą pinigų valdymo sistemą.
             </p>
             <Link href="/consultation">
-              <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-100 text-lg px-8 py-4">
+              <Button
+                size="lg"
+                className="bg-white text-emerald-600 hover:bg-gray-100 text-lg px-8 py-4"
+              >
                 <Calendar className="mr-2 h-5 w-5" />
                 Užsisakyti nemokamą konsultaciją
               </Button>
@@ -196,5 +260,5 @@ export default function MoneyManagement() {
       {/* Footer */}
       <Footer />
     </div>
-  )
+  );
 }
