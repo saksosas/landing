@@ -1,11 +1,27 @@
-"use client"
+import type { Metadata } from "next";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shield, Mail, Eye, Lock } from "lucide-react"
-import Link from "next/link"
-import { Footer } from "@/components/footer"
-import { InternalHeader } from "@/components/internal-header"
+export const metadata: Metadata = {
+  title: "Privatumo politika",
+  description:
+    "Privatumo politika - kaip tvarkome jūsų duomenis. Mantas Molotkovas finansų konsultantas. Išsami informacija apie duomenų apsaugą ir jūsų teises.",
+  keywords: [
+    "privatumo politika",
+    "duomenų apsauga",
+    "GDPR",
+    "finansų konsultantas",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Shield, Mail, Eye, Lock } from "lucide-react";
+import Link from "next/link";
+import { Footer } from "@/components/footer";
+import { InternalHeader } from "@/components/internal-header";
 
 export default function PrivacyPolicy() {
   return (
@@ -19,9 +35,12 @@ export default function PrivacyPolicy() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-12">
             <Shield className="h-16 w-16 text-emerald-600 mx-auto mb-4" />
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Privatumo politika</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Privatumo politika
+            </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Jūsų privatumas yra mums svarbus. Čia paaiškinama, kaip tvarkome jūsų pateiktą informaciją.
+              Jūsų privatumas yra mums svarbus. Čia paaiškinama, kaip tvarkome
+              jūsų pateiktą informaciją.
             </p>
           </div>
 
@@ -36,7 +55,8 @@ export default function PrivacyPolicy() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Kai užpildote konsultacijos užklausos formą, renkame šią informaciją:
+                  Kai užpildote konsultacijos užklausos formą, renkame šią
+                  informaciją:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                   <li>Vardas ir pavardė</li>
@@ -45,7 +65,9 @@ export default function PrivacyPolicy() {
                   <li>Miestas (neprivaloma)</li>
                   <li>Amžius (neprivalomas)</li>
                   <li>Jus dominančios finansų temos</li>
-                  <li>Papildoma informacija, kurią pateikiate žinutės laukelyje</li>
+                  <li>
+                    Papildoma informacija, kurią pateikiate žinutės laukelyje
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -61,13 +83,17 @@ export default function PrivacyPolicy() {
               <CardContent className="space-y-4">
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
                   <p className="text-emerald-800 font-medium mb-2">
-                    ⚡ Svarbu: Mes NESAUGOME jūsų duomenų jokiose duomenų bazėse ar serveriuose.
+                    ⚡ Svarbu: Mes NESAUGOME jūsų duomenų jokiose duomenų bazėse
+                    ar serveriuose.
                   </p>
                   <p className="text-emerald-700">
-                    Visa informacija iš formos yra tiesiogiai siunčiama man el. paštu tiesioginiam kontaktui su jumis.
+                    Visa informacija iš formos yra tiesiogiai siunčiama man el.
+                    paštu tiesioginiam kontaktui su jumis.
                   </p>
                 </div>
-                <p className="text-gray-700 leading-relaxed">Jūsų pateiktą informaciją naudojame tik šiais tikslais:</p>
+                <p className="text-gray-700 leading-relaxed">
+                  Jūsų pateiktą informaciją naudojame tik šiais tikslais:
+                </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                   <li>Susisiekti su jumis dėl konsultacijos</li>
                   <li>Pasiruošti konsultacijai pagal jūsų nurodytas temas</li>
@@ -87,12 +113,15 @@ export default function PrivacyPolicy() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Nors mes nesaugome jūsų duomenų sistemose, imamės šių saugumo priemonių:
+                  Nors mes nesaugome jūsų duomenų sistemose, imamės šių saugumo
+                  priemonių:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                   <li>Formos duomenys siunčiami saugiu SSL šifravimu</li>
                   <li>El. pašto komunikacija vyksta per saugius kanalus</li>
-                  <li>Jūsų duomenys niekada nėra perduodami trečiosioms šalims</li>
+                  <li>
+                    Jūsų duomenys niekada nėra perduodami trečiosioms šalims
+                  </li>
                   <li>Laikomės griežtų konfidencialumo standartų</li>
                 </ul>
               </CardContent>
@@ -101,10 +130,14 @@ export default function PrivacyPolicy() {
             {/* Contact Information */}
             <Card className="bg-white/30 backdrop-blur-xl border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-xl font-semibold text-gray-900">Jūsų teisės ir kontaktai</CardTitle>
+                <CardTitle className="text-xl font-semibold text-gray-900">
+                  Jūsų teisės ir kontaktai
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-gray-700 leading-relaxed">Jūs turite teisę:</p>
+                <p className="text-gray-700 leading-relaxed">
+                  Jūs turite teisę:
+                </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                   <li>Sužinoti, kokią informaciją apie jus turime</li>
                   <li>Prašyti ištaisyti neteisingą informaciją</li>
@@ -116,10 +149,14 @@ export default function PrivacyPolicy() {
                     <strong>Klausimų ar pageidavimų atveju susisiekite:</strong>
                   </p>
                   <p className="text-gray-700">
-                    El. paštas: <span className="text-emerald-600">molotkovasmantas@gmail.com</span>
+                    El. paštas:{" "}
+                    <span className="text-emerald-600">
+                      molotkovasmantas@gmail.com
+                    </span>
                   </p>
                   <p className="text-gray-700">
-                    Telefonas: <span className="text-emerald-600">+370 (644) 28 394</span>
+                    Telefonas:{" "}
+                    <span className="text-emerald-600">+370 (644) 28 394</span>
                   </p>
                 </div>
               </CardContent>
@@ -128,12 +165,15 @@ export default function PrivacyPolicy() {
             {/* Updates */}
             <Card className="bg-white/30 backdrop-blur-xl border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-xl font-semibold text-gray-900">Privatumo politikos atnaujinimai</CardTitle>
+                <CardTitle className="text-xl font-semibold text-gray-900">
+                  Privatumo politikos atnaujinimai
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 leading-relaxed">
-                  Ši privatumo politika gali būti atnaujinta. Visi pakeitimai bus paskelbti šiame puslapyje. Politika
-                  paskutinį kartą atnaujinta: <strong>2025 m. birželio mėn.</strong>
+                  Ši privatumo politika gali būti atnaujinta. Visi pakeitimai
+                  bus paskelbti šiame puslapyje. Politika paskutinį kartą
+                  atnaujinta: <strong>2025 m. birželio mėn.</strong>
                 </p>
               </CardContent>
             </Card>
@@ -153,5 +193,5 @@ export default function PrivacyPolicy() {
       {/* Footer */}
       <Footer />
     </div>
-  )
+  );
 }
